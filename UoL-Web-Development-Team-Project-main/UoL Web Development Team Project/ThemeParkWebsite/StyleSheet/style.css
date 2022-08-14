@@ -1,0 +1,730 @@
+/*Custom Fonts-------------------------------------*/
+/*Common CSS*/
+* {
+  box-sizing: content-box;
+}
+
+/* heading 1 style */
+h1 {
+  font-family: "comic Sans MS", Brush Script MT, Comic Sans, cursive;
+  font-size: 100%;
+  font-weight: bold;
+  font-weight: 100;
+  animation-name: title_animation;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  color: black;
+}
+
+@keyframes title_animation {
+  from {
+    background-image: repeating-linear-gradient(#faaca8, #ddd6f3);
+  }
+  to {
+    background-image: repeating-linear-gradient(#f5f5f5, #3fc1c9);
+  }
+}
+
+/*Heading 2 style */
+h2 {
+  font-family: "comic Sans MS", Brush Script MT, Comic Sans, cursive;
+  font-size: 80%;
+  font-weight: bold;
+  color: black;
+  text-transform: uppercase;
+}
+
+/*Heading 3 style */
+h3 {
+  font-family: "comic Sans MS", Brush Script MT, Comic Sans, cursive;
+  font-size: 100%;
+  font-weight: bold;
+  margin: inherit;
+  color: black;
+  text-transform: uppercase;
+}
+
+/*emphasis*/
+em {
+  color: white;
+}
+
+p {
+  font-family: "comic Sans MS", Brush Script MT, Comic Sans, cursive;
+  font-size: 100%;
+  color: black;
+  text-align: match-parent;
+}
+
+/*Header CSS---------------------------------------*/
+header {
+  grid-area: header;
+}
+
+/* Adventure Land*/
+.titleA {
+  font-family: "comic Sans MS", Brush Script MT, Comic Sans, cursive;
+  font-size: 500%;
+  font-weight: bold;
+  color: black;
+  text-align: center;
+  padding: 2% 0 2% 0;
+  margin: 0px;
+  border-radius: 20px 20px 0px 0px;
+  text-transform: uppercase;
+  animation-duration: 7s;
+}
+
+/*slogan style* - Where happiness is unlimited/*/
+.sloganA {
+  font-family: "comic Sans MS", Brush Script MT, Comic Sans, cursive;
+  font-size: 200%;
+  font-weight: bold;
+  text-align: center;
+  padding: 2% 0 4% 0;
+  margin-top: 0px;
+  margin-bottom: 10px;
+  color: black;
+  border-radius: 1px 1px 20px 20px;
+  animation-name: slogan_animation;
+  animation-duration: 7s;
+  animation-iteration-count: infinite;
+  text-transform: uppercase;
+}
+
+/*slogan animation*/
+@keyframes slogan_animation {
+  from {
+    background-image: linear-gradient(to left, #faaca8, #ddd6f3);
+  }
+  to {
+    background-image: linear-gradient(to right, #f5f5f5, #3fc1c9);
+  }
+}
+
+/*Nav CSS-*/
+
+nav {
+  grid-area: nav;
+  position: fixed;
+  top: 0;
+  overflow: hidden;
+  width: 100%;
+}
+
+/*navigation list */
+nav li a {
+  display: block;
+  font-size: 1em;
+  padding: 14px 16px;
+  color: hsl(0, 0%, 255%);
+  text-decoration: none;
+}
+
+.navbar {
+  font-size: 120%;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+  border-radius: 20px;
+  background-image: linear-gradient(pink, aliceblue);
+  margin: 0px;
+  position: fixed;
+}
+
+/*Adventure Land logo link  */
+.navbar-header {
+  font-weight: 600;
+  font-family: "comic Sans MS", Brush Script MT, Comic Sans, cursive;
+  text-transform: uppercase;
+}
+
+/* Right side navegation bar */
+.topnav-right {
+  font-family: "comic Sans MS", Brush Script MT, Comic Sans, cursive;
+  padding-top: 10px;
+  float: right;
+  display: flex;
+  column-gap: 30px;
+  justify-content: space-between;
+  font-size: 100%;
+}
+
+/*Index.html CSS------------------------------------
+
+/*main Home page image*/
+.HomeImg {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  object-fit: contain;
+  border-style: outset;
+}
+
+.p2Middle {
+  font-family: "comic Sans MS", Brush Script MT, Comic Sans, cursive;
+  background-image: linear-gradient(pink, aliceblue);
+  border-radius: 20px 20px 0px 0px;
+  text-align: center;
+  padding: 4% 0 2% 0;
+  margin-bottom: 2px;
+  font-weight: bold;
+  font-size: 300%;
+}
+
+/*box for video / middle section of home page*/
+
+.IndexHome {
+  padding: 0% 0 0% 0;
+  text-align: center;
+  margin: auto;
+}
+
+.HomeVideo_vid {
+  width: 80%;
+  height: 600px;
+  object-fit: contain;
+  border-style: double;
+  border-color: antiquewhite;
+}
+
+/*more info style*/
+.moreInfo {
+  font-size: 100%;
+  font-family: "comic Sans MS", Brush Script MT, Comic Sans, cursive;
+  text-transform: uppercase;
+}
+
+.titelSecondPageAttraction {
+  padding-left: 4%;
+}
+
+/* General Park Information columns - */
+.column {
+  font-family: "comic Sans MS", Brush Script MT, Comic Sans, cursive;
+  float: left;
+  margin-left: 4px;
+  padding: 20px;
+  height: 600px;
+  text-align: center;
+  width: 33%;
+  border-style: ridge;
+  transition-property: height;
+  transition-duration: 1s;
+  transition-timing-function: ease-in-out;
+  transition-delay: 0s;
+}
+
+/*hover: column*/
+.column:hover {
+  height: 700px;
+}
+
+/*Restaurants info*/
+.left {
+  background-image: linear-gradient(pink, aliceblue);
+  opacity: 1;
+  border-radius: 20px;
+    border-style: ridge;
+  animation-duration: 4s;
+  animation-delay: 1s;
+  animation-iteration-count: infinite;
+  animation-name: restaurants_background;
+column-width: auto;
+}
+
+/*changing colour of columns on home page - left*/
+@keyframes restaurants_background {
+  from {
+    background-image: linear-gradient(pink, aliceblue);
+  }
+  to {
+    background-image: linear-gradient(aquamarine, rgb(85, 85, 209));
+  }
+}
+
+.middle {
+  background-image: linear-gradient(pink, aliceblue);
+  border-radius: 20px;
+  animation-duration: 4s;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+  animation-name: restaurants_background_middle;
+column-width: auto;
+}
+
+/*changing colour of columns on home page - middle*/
+@keyframes restaurants_background_middle {
+  from {
+    background-image: linear-gradient(pink, aliceblue);
+  }
+  to {
+    background-image: linear-gradient(aquamarine, rgb(85, 85, 209));
+  }
+}
+
+.right {
+  background-image: linear-gradient(pink, aliceblue);
+  opacity: 1;
+  border-radius: 20px;
+  animation-duration: 4s;
+  animation-delay: 3s;
+  animation-iteration-count: infinite;
+  animation-name: restaurants_background_right;
+    column-width: auto;
+}
+
+/*changing colour of columns on home page - right*/
+@keyframes restaurants_background_right {
+  from {
+    background-image: linear-gradient(pink, aliceblue);
+  }
+  to {
+    background-image: linear-gradient(aquamarine, rgb(85, 85, 209));
+  }
+}
+
+/*Image styles for Home More info on Park*/
+.moreInfo_home {
+  width: 50%;
+  height: auto;
+  position: inherit;
+  border: 4px;
+  color: orchid;
+  border-style: ridge;
+}
+
+/*attractions.html CSS-------------------------------------*/
+
+/*Main image on attractions page */
+.topImg {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  border-style: outset;
+  object-fit: contain;
+}
+
+.pMiddle {
+  font-family: "comic Sans MS", Brush Script MT, Comic Sans, cursive;
+  text-align: center;
+  padding: 4% 0 2% 0;
+  font-weight: 550;
+  font-size: 200%;
+}
+
+/*Attraction Images  */
+
+.container {
+  position: relative;
+  width: 100%;
+}
+.rollerCoaster {
+  padding: 4% 0 4% 4%;
+  background-color: ghostwhite;
+  position: relative;
+}
+
+.lazyRiver {
+  text-align: right;
+  padding: 1% 4% 4% 4%;
+  background-color: ghostwhite;
+}
+
+.adventureGolf {
+  padding: 2% 0 4% 4%;
+  background-color: ghostwhite;
+}
+
+.attractionsGrid {
+  display: grid;
+  grid-row-gap: 2%;
+  grid-column-gap: 1%;
+  grid-template-columns: 33% 33% 33%;
+  background-image: linear-gradient(aliceblue, pink);
+  padding: 2%;
+}
+
+.overlayAttractions {
+  position: absolute;
+  bottom: 65%;
+  overflow: hidden;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1;
+  width: 79%;
+  transition: 0.5s ease;
+  opacity: 0;
+  color: white;
+  font-size: 60%;
+  font-weight: bold;
+  padding: 50px;
+  text-align: center;
+}
+
+.attraction1:hover .overlayAttractions {
+  opacity: 1;
+}
+
+.attraction2:hover .overlayAttractions {
+  opacity: 1;
+}
+
+.attraction3:hover .overlayAttractions {
+  opacity: 1;
+}
+
+.polaroid_img2 {
+  display: block;
+  width: 50%;
+  float: center;
+  border-radius: 15px;
+}
+
+.polaroid_img1 {
+  display: block;
+  width: 100%;
+  height: auto;
+  float: center;
+  border-radius: 15px;
+  position: relative;
+  z-index: 0;
+}
+
+.attraction1 {
+  font-family: "comic Sans MS", Brush Script MT, Comic Sans, cursive;
+  background-image: linear-gradient(pink, aliceblue);
+  border-radius: 20px;
+  border-style: ridge;
+  position: relative;
+  padding: 10%;
+  font-size: 150% !important;
+  text-align: left;
+}
+
+.attraction2 {
+  font-family: "comic Sans MS", Brush Script MT, Comic Sans, cursive;
+  background-image: linear-gradient(pink, aliceblue);
+  border-radius: 20px;
+  border-style: ridge;
+  position: relative;
+  padding: 10%;
+  font-size: 150% !important;
+  text-align: left;
+}
+
+.attraction3 {
+  font-family: "comic Sans MS", Brush Script MT, Comic Sans, cursive;
+  background-image: linear-gradient(pink, aliceblue);
+  border-radius: 20px;
+  border-style: ridge;
+  position: relative;
+  padding: 10%;
+  font-size: 150% !important;
+  text-align: left;
+}
+
+.attractionOthers {
+  font-family: "comic Sans MS", Brush Script MT, Comic Sans, cursive;
+  background-image: linear-gradient(pink, aliceblue);
+  border-radius: 20px;
+  border-style: ridge;
+  position: relative;
+  padding: 10%;
+  font-size: 150% !important;
+  text-align: left;
+  position: relative;
+}
+
+.text1 {
+  font-family: "comic Sans MS", Brush Script MT, Comic Sans, cursive;
+  white-space: nowrap;
+  color: cadetblue;
+  font-size: 100%;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+.overlay {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: black;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: 0.5s ease;
+}
+
+.text {
+  font-family: "comic Sans MS", Brush Script MT, Comic Sans, cursive;
+  white-space: nowrap;
+  color: cadetblue;
+  font-size: 150%;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+/*more info overlay for rollercoaster*/
+.rollerCoaster:hover .overlay {
+  bottom: 0;
+  height: 100%;
+}
+
+/*more info overlay for lazy river ride*/
+.lazyRiver:hover .overlay {
+  bottom: 0;
+  height: 100%;
+}
+
+/*more info overlay for adventure golf*/
+.adventureGolf:hover .overlay {
+  bottom: 0;
+  height: 100%;
+}
+
+.titelSecondPageAttraction {
+  padding-left: 4%;
+  text-align: left;
+}
+
+.attractionVideo {
+  text-align: center;
+  padding: 9% 0 20% 0;
+}
+
+/*restaurants.html CSS-----------------------------------*/
+/* Defining the grid of the restaurant webpage */
+.titleA {
+  grid-area: title;
+}
+.restaurantImg {
+  grid-area: image;
+}
+.sloganA {
+  grid-area: slogan;
+}
+.subtitle {
+  grid-area: subtitle;
+}
+.one {
+  grid-area: rest1;
+}
+.two {
+  grid-area: rest2;
+}
+.three {
+  grid-area: rest3;
+}
+.four {
+  grid-area: rest4;
+}
+
+.grid-container-restaurants {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto;
+  grid-template-areas:
+    "header header header header header header"
+    "subtitle subtitle subtitle subtitle subtitle subtitle"
+    "rest1 rest1 rest1 rest2 rest2 rest2"
+    "rest3 rest3 rest3 rest4 rest4 rest4"
+    "footer footer footer footer footer footer";
+}
+
+.restaurantImg {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  object-fit: contain;
+  border-style: outset;
+  position: relative;
+}
+
+/* Box Model applied to the restaurants of the list */
+.restaurant {
+  font-family: "comic Sans MS", Brush Script MT, Comic Sans, cursive;
+  padding: 10px;
+  margin: 20px;
+  border-style: inset;
+}
+
+/*hover: height*/
+.restaurant:hover {
+  height: 99%;
+  width: 99%;
+}
+
+/* Box Model applied to the Restaurant images */
+.rest_image2 {
+  width: 100%;
+  height: auto;
+  position: inherit;
+  padding: 10px;
+  border-radius: 20px;
+  border-style: ridge;
+}
+
+/* Restaurant tables Styled applied  */
+.restLocationContact {
+  float: right;
+  padding: 10px;
+  text-align: right;
+  border: none;
+}
+
+.restOpeningTimes {
+  float: left;
+  padding: 10px;
+}
+
+.restDetails {
+  float: center;
+  padding: 10px;
+  border-style: dotted;
+  border-color: aliceblue;
+}
+
+.tableL,
+td {
+  width: 70%;
+}
+
+.tableR {
+  text-align: right;
+}
+
+.tableM {
+  width: 110%;
+  text-align: center;
+}
+
+/*Restaurants info - main intro info*/
+.one {
+  background-image: linear-gradient(pink, aliceblue);
+  opacity: 1;
+  border-radius: 20px;
+  border-style: ridge;
+  animation-name: one;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+/*animation - changing colours to restaurants background box*/
+@keyframes one {
+  from {
+    background-image: linear-gradient(pink, aliceblue);
+  }
+  to {
+    background-image: linear-gradient(aliceblue, pink);
+  }
+}
+
+.two {
+  background-image: linear-gradient(pink, aliceblue);
+  opacity: 1;
+  border-radius: 20px;
+  border-style: ridge;
+  animation-name: two;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes two {
+  from {
+    background-image: linear-gradient(aliceblue, pink);
+  }
+  to {
+    background-image: linear-gradient(pink, aliceblue);
+  }
+}
+
+.three {
+  background-image: linear-gradient(pink, aliceblue);
+  opacity: 1;
+  border-radius: 20px;
+  border-style: ridge;
+  animation-name: one;
+  border-style: ridge;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+.four {
+  background-image: linear-gradient(pink, aliceblue);
+  opacity: 1;
+  border-radius: 20px;
+  border-style: ridge;
+  animation-name: two;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+/*Footer CSS-------------------------------------------*/
+footer {
+  grid-area: footer;
+}
+
+footer {
+  font-family: "comic Sans MS", Brush Script MT, Comic Sans, cursive;
+  background-color: #f8f8ff;
+  position: static;
+  padding: 2% 0 2% 0;
+}
+
+/*contact style*/
+.contact {
+  background-image: url("image_border.png");
+  background-size: 30%;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  /* border-image: url("image_border.png");
+  border: 10px solid transparent;
+  padding: 15px; */
+
+  text-align: center;
+  text-shadow: 1px 0px 2px black, 5px 1px 25px grey, 0 0 5px ghostwhite;
+  font-size: 120%;
+  font-family: "comic Sans MS", Brush Script MT, Comic Sans, cursive;
+  padding-top: 0.5%;
+  padding-bottom: 0.5%;
+}
+
+/*social media div*/
+.socialMedia {
+  text-align: center;
+  background-color: #f8f8ff;
+  padding: 2% 0 2% 0;
+  position: relative;
+  animation: social_media_animation 6s infinite;
+}
+
+/*moving social media imgage*/
+@keyframes social_media_animation {
+  from {
+    left: -400px;
+  }
+  to {
+    left: 0px;
+  }
+}
+
+/*social media img/icon dimensions*/
+.socialMediaImg {
+  width: 3%;
+}
+
+/*CSS Validated */
+.CSS_validate {
+  margin: auto;
+  text-align: center;
+}
